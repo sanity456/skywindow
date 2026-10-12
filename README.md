@@ -1,5 +1,7 @@
 # SkyWindow
 
+SUBMISSION HOLD: This version classifies caller-supplied sky narratives and calculates a viewing window. Although its local and StudioNet tests passed, it does not yet make a consensus-critical shared state transition from independently checkable evidence. Do not submit this deployment as a review-ready intelligent contract. A different mechanism and new deployment are required.
+
 Batch C2. A reusable GenLayer intelligent contract that selects the longest consecutive run of declared clear viewing conditions from an ordered series of astronomy time slots. The caller submits two to twelve labelled slots and a short sky narrative for each. Independent validators classify every slot as `CLEAR`, `CLOUDY`, or `UNCERTAIN`. Deterministic code selects the longest contiguous `CLEAR` run, breaking ties toward the earliest run.
 
 The narratives are user declarations. The contract does not fetch weather data, verify an observer, or guarantee real-world sky conditions. `UNCERTAIN` never counts as clear. Anyone relying on this for an observing event must independently check the actual conditions.
