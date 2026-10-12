@@ -1,0 +1,57 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "assess_run": {
+      "params": [
+        [
+          "run_key",
+          "string"
+        ],
+        [
+          "site_notes",
+          "string"
+        ],
+        [
+          "slot_labels",
+          [
+            {
+              "$rep": "string"
+            }
+          ]
+        ],
+        [
+          "narratives",
+          [
+            {
+              "$rep": "string"
+            }
+          ]
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_run": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "run_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    }
+  }
+}
